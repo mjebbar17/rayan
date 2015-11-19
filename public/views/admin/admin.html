@@ -1,0 +1,51 @@
+<div id="logout">
+    <button class="btn btn-primary" ng-click="logout()">Logout</button>
+</div>
+
+<div id="basket-holder">
+
+    <h2 class="text-center">Basket managment</h2>
+
+    <div class="center-block" id="date-selector">
+        Select Date
+        <input type="date" ng-model="date" ng-change="dateChanged()" max="{{todaysDate}}" required="required"/>
+        <!--<button ng-click="nextDay()">Next Day</button>-->
+    </div>
+    <div class="basket-table">
+        <table class="table table-bordered table-responsive">
+            <tr>
+                <th>Customer</th>
+                <th>Out</th>
+                <th>In</th>
+                <th>Remaining Today</th>
+                <th>Total Remaining</th>
+                <th></th>
+
+            </tr>
+
+            </tr>
+            <tr ng-repeat="customer in customers">
+                <td class="name" ><a href="#/customer/{{customer.customerName}}">{{customer.customerName}}</a></td>
+                <td><input type="text" ng-model="customer.quantityTaken"/></td>
+                <td><input type="text" ng-model="customer.quantityReturned"/></td>
+                <td>{{customer.quantityTaken - customer.quantityReturned || "-"}}</td>
+                <td>{{customer.basketsRemaining}}</td>
+                <td><button class="btn btn-success" ng-click="updateCustomerBaskets($index)">Update</button></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>{{totalBasketsRemaining}}</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="center-block" id="add-customer">
+    <input placeholder="Customer name" ng-model="newCustomerName" type="text"/>
+    <button class="btn btn-primary" ng-click="addCustomer()">Add Customer</button>
+    </div>
+</div>

@@ -1,0 +1,95 @@
+/*input[type=date]::-webkit-inner-spin-button,*/
+/*input[type=date]::-webkit-outer-spin-button {*/
+    /*-webkit-appearance: none;*/
+    /*margin: 0;*/
+/*}*/
+
+
+body{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7f7163+0,c9c190+25,83d3b4+100 */
+    background: #7f7163; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #7f7163 0%, #c9c190 25%, #83d3b4 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #7f7163 0%,#c9c190 25%,#83d3b4 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #7f7163 0%,#c9c190 25%,#83d3b4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7f7163', endColorstr='#83d3b4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#login-container{
+    width: 100%;
+    text-align: center;
+
+}
+#login-holder{
+    margin-top: 30px;
+    width: 60%;
+    display: inline-block;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.43);
+    padding: 15px;
+    color: white;
+}
+
+.my-input{
+    margin-top: 10px;
+}
+
+#login-btn{
+    margin-top: 10px;
+}
+
+#basket-holder{
+    text-align: center;
+}
+.basket-table{
+    margin: 15px;
+    padding: 10px;
+    box-shadow: 2px 1px 1px 1px rgba(0, 0, 0, 0.28);
+    background-color: rgba(0, 0, 0, 0.02);
+
+}
+
+#add-customer{
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.13);
+    width: 50%;
+    font-weight: bolder;
+
+}
+
+td input{
+    width: 80px;
+}
+
+#logout{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding:15px;
+}
+
+th{
+    background-color: #448AFF;
+    color: rgb(242, 242, 242);
+}
+
+.name{
+    background-color: #1976D2;
+    color: rgb(242, 242, 242);
+}
+.name a{
+    color: rgb(242, 242, 242);
+}
+
+#back-btn{
+    margin: 15px;
+
+}
+
+.btn-success{
+    background-color: #009688;
+}
+
+.btn-primary{
+    background-color: #1976D2;
+}

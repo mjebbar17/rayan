@@ -1,0 +1,21 @@
+<a id="back-btn"  class="btn btn-primary" href="#/admin">Back</a>
+<h1 class="text-center"> {{customerName}}</h1>
+<div class="basket-table">
+    <table class="table table-bordered table-responsive">
+        <tr>
+            <th>Date</th>
+            <th>Out</th>
+            <th>In</th>
+            <th>Remaining</th>
+
+        </tr>
+
+        </tr>
+        <tr ng-repeat="basket in customerBaskets">
+            <td>{{basket.date |  date : format : shortDate}}</td>
+            <td>{{basket.quantityTaken}}</td>
+            <td>{{basket.quantityReturned}}</td>
+            <td>{{basket.quantityTaken - basket.quantityReturned}}</td>
+        </tr>
+    </table>
+</div>
